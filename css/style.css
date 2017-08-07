@@ -1,0 +1,48 @@
+body{
+    margin-top: 60px;
+    background-color: gainsboro;
+}
+
+.box{
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 400px;
+    background-color: #a5a2a2;
+}
+.boxField{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 15px;
+    height: 80px;
+    background-color: #e0e0e0;
+    text-align: right;
+    padding: 13px;
+}
+.digit{
+    font-size: 40px;
+    padding: 5px;
+}
+.boxButton{
+    border: 1px solid #000;
+    padding: 7px 0px 8px 21px;
+    margin: 21px 18px 3px 13px;
+        border-radius: 15px;
+    background-color: #8a8888;
+}
+
+body .btn{
+    background-color: #e0e0e0;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 7px;
+    text-align: center;
+     width: 55px; 
+     height: 50px; 
+    margin: 2%;
+
+}
+.deleteBtn{
+    width: 40px;
+    height: 40px;
+    margin : -20px -5px 0px -2px;
+}

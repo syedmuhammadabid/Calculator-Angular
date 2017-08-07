@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <h1 class="text-center">Simple Calculator</h1>
+                <h3 class="text-center">AngularJS</h3>
+                <br>
+                <h4 class="text-center">Made by : Syed Muhammad Abid</h4>
+
+                <br>
+                <div class="box">
+                    <div class="boxField">
+                        <span class="digit">{{output}}</span>
+                        <img src="img/delet.png" alt="" width="40px" height="40px" class="deleteBtn" ng-click="output = 0">
+                    </div>
+
+                    <div class="boxButton">
+
+                        <button class="btn btn-default" ng-click="updateOutput('7')">7</button>
+                        <button class="btn btn-default" ng-click="updateOutput('8')">8</button>
+                        <button class="btn btn-default" ng-click="updateOutput('9')">9</button>
+                        <button class="btn btn-default" ng-click="operate('/')">&#247</button>
+                        <br>
+                        <button class="btn btn-default" ng-click="updateOutput('4')">4</button>
+                        <button class="btn btn-default" ng-click="updateOutput('5')">5</button>
+                        <button class="btn btn-default" ng-click="updateOutput('6')">6</button>
+                        <button class="btn btn-default" ng-click="operate('*')">&#215</button>
+                        <br>
+                        <button class="btn btn-default" ng-click="updateOutput('1')">1</button>
+                        <button class="btn btn-default" ng-click="updateOutput('2')">2</button>
+                        <button class="btn btn-default" ng-click="updateOutput('3')">3</button>
+                        <button class="btn btn-default" ng-click="operate('-')">&#8722</button>
+                        <br>
+                        <button class="btn btn-default" ng-click="updateOutput('0')">0</button>
+                        <button class="btn btn-default" ng-click="updateOutput('.')">.</button>
+                        <button class="btn btn-default" ng-click="operate('+')">+</button>
+                        <button class="btn btn-default" ng-click="equal()">=</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
