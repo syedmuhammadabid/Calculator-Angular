@@ -20,14 +20,28 @@ app.controller('myCtrl', function ($scope) {
             $scope.output += op;
             $scope.inOperation = true;
         } else if ($scope.output.length > $scope.num1.length + 1) {
-            $scope.output = eval($scope.output);
+            try {
+
+                $scope.output = eval($scope.output);
+            }
+            catch (e) {
+                alert("Expression is invalid.");
+
+            }
+            console.log($scope.output);
             $scope.output += op;
         }
     };
 
     $scope.equal = function () {
         if ($scope.output.length > $scope.num1.length + 1) {
-            $scope.output = eval($scope.output);
+            try {
+                $scope.output = eval($scope.output);
+            }
+            catch (e) {
+                alert("Expression is invalid.");
+            }
+            console.log($scope.output);
             $scope.num1 = $scope.output;
         } else {
             $scope.output = $scope.num1;
