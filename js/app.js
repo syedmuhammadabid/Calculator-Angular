@@ -48,4 +48,10 @@ app.controller('myCtrl', function ($scope) {
         }
     };
 
+    $scope.clear = function () {
+
+        $scope.output = 0;
+        $scope.inOperation = false;
+    };
+
 });
